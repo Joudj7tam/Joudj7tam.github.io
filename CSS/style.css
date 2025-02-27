@@ -1,0 +1,155 @@
+body {
+    background-color: black;
+    font-family: 'Arial', Sans-Serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    background-color: black;
+}
+
+nav h2 {
+    color: white;
+    font-size: 25px;
+    transition: transform 0.2s ease;
+}
+
+nav h2:hover{
+    transform: scale(1.2);
+}
+
+nav span {
+    color: #F8AEAD;
+    text-shadow: 0 0 10px#F8AEAD;
+}
+
+nav .pages-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #F8AEAD;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+    background-color: black;
+    height: 700px;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center; 
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-logo {
+    height: 300px;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translatey(10%);
+    }
+    50% {
+        transform: translatey(2%);
+    }
+}
+
+.words-container{
+    transform: translateY(10%);
+    min-width: 400px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+header span{
+    font-size: 60px;
+    color: #F8AEAD;
+    text-shadow: 0 0 10px #F8AEAD;
+}
+
+header span:hover {
+    animation: hoverAnimation 0.2s ease forwards;
+}
+
+@keyframes hoverAnimation {
+    100% {
+        text-shadow:
+            0 0 10px #f88381,
+            0 0 20px #f88381,
+            0 0 30px #f88381;
+    }
+}
+
+header p {
+    width: 600px;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-social-icons-container {
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+.header-email,
+.header-linkedin {
+    height: 30px;
+    border: solid 2px #F8AEAD;
+    border-radius: 20%;
+    padding: 7px;
+    box-shadow: 0 0 15px #f88381, inset 0 0 5px #fff;
+}
+
+.header-email:hover,
+.header-linkedin:hover {
+    animation: iconsAnimation 0.3s ease forwards;
+}
+
+@keyframes iconsAnimation {
+    100% {
+        box-shadow:
+            0 0 10px #fff,
+            0 0 20px #f88381,
+            0 0 30px #f88381,
+            inset 0 0 10px #f88381;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        transform: translatex(20%) translateY(5%);
+    }
+}

@@ -1,0 +1,140 @@
+body {
+    background-color: black;
+    font-family: 'Arial', Sans-Serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    background-color: black;
+}
+
+nav h2 {
+    color: white;
+    font-size: 25px;
+    transition: transform 0.2s ease;
+}
+
+nav h2:hover{
+    transform: scale(1.2);
+}
+
+nav span {
+    color: #F8AEAD;
+    text-shadow: 0 0 10px#F8AEAD;
+}
+
+nav .pages-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #F8AEAD;
+}
+
+.page-title{
+    font-size: 60px;
+    color: white;
+}
+
+.container{
+    position: relative;
+    transform: translateY(10%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+}
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+}
+
+.Project-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+    position: relative;
+    margin: 50px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 750px;
+    min-width: 400px;
+    border: solid 2px white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #F8AEAD;
+}
+
+.photo{
+    height: 300px;
+    margin: 10px;
+}
+
+.description-container{
+    margin: 10px;
+}
+
+h1{
+    color: #F8AEAD;
+    font-size: 50px;
+}
+
+p{
+    color: white;
+    font-size: 24px;
+}
+
+span{
+    color: #F8AEAD;
+    font-weight: bold;
+}
+
+.project-github{
+    height: 30px;
+    border: solid 2px #F8AEAD;
+    border-radius: 20%;
+    padding: 7px;
+    box-shadow: 0 0 15px #f88381, inset 0 0 5px #fff;
+}
+
+.project-github:hover{
+    animation: iconsAnimation 0.3s ease forwards;
+}
+
+@keyframes iconsAnimation {
+    100% {
+        box-shadow:
+            0 0 10px #fff,
+            0 0 20px #f88381,
+            0 0 30px #f88381,
+            inset 0 0 10px #f88381;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        transform: translatex(100px) translateY(5%);
+    }
+}

@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+    font-family: 'Arial', Sans-Serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    background-color: black;
+}
+
+nav h2 {
+    color: white;
+    font-size: 25px;
+    transition: transform 0.2s ease;
+}
+
+nav h2:hover{
+    transform: scale(1.2);
+}
+
+nav span {
+    color: #F8AEAD;
+    text-shadow: 0 0 10px#F8AEAD;
+}
+
+nav .pages-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #F8AEAD;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+h1 span {
+    color: #F8AEAD;
+    text-shadow: 0 0 10px #F8AEAD;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contact-container{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translatex(2%);
+}
+
+.right-side{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.left-side{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin: 10px 0;
+    width: 450px;
+}
+
+input{
+    height: 40px;
+}
+
+textarea {
+    height: 240px;
+    resize: none;
+}
+
+input, textarea {
+    width: 400px;
+    padding: 12px;
+    border: 2px solid #F8AEAD;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 10px #F8AEAD;
+    outline: none;
+}
+
+button {
+    position: relative;
+    right: 20px;
+    width: 170px;
+    background-color: #F8AEAD;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #f88381;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #fff, 0 0 30px #f88381, 0 0 40px #f88381;
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .container{
+        transform: translatex(20%) translateY(5%);
+    }
+    
+}
